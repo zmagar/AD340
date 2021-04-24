@@ -6,29 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alex Bondar"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:numColumns="2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintTop_toBottomOf="@+id/textEntry" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="376dp"
-        android:layout_height="382dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginEnd="16dp"
-        android:text="I spent ten+ years of my life playing chess, and while I didn't achieve any significant success, chess brought me a lot of joy. I met a lot of great chess players, several world champions, from Boris Spassky, Gary Kasparov to Magnus Carlsen."
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+    <EditText
+        android:id="@+id/textEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_text"
+        android:inputType="textShortMessage|none"
+        app:layout_constraintStart_toStartOf="@+id/grid_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="@string/send"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/textEntry"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--        tools:layout_editor_absoluteY="37dp" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
