@@ -1,6 +1,7 @@
 package com.aleksbondar.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,7 +50,12 @@ public class Adapter extends BaseAdapter {
         button.setOnClickListener(v -> {
             Button b = (Button) v;
             String s = b.getText().toString();
-            Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
+            if (s == "Movies") {
+                Intent intent = new Intent(v.getContext(), MoviesActivity.class);
+                v.getContext().startActivity(intent);
+            }
+            else Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
+
 
         });
 
