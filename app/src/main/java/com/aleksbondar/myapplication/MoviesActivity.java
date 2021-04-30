@@ -45,6 +45,7 @@ public class MoviesActivity extends AppCompatActivity {
         listView =findViewById(R.id.list);
         MoviesAdapter moviesAdapter = new MoviesAdapter(this, zombieMovies);
         listView.setAdapter(moviesAdapter);
+        listView.scrollListBy(30);
 
     }
 }
