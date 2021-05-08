@@ -3,7 +3,6 @@ package com.aleksbondar.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
@@ -14,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText enterTextField;
 
-    String[] buttons = {"Movies", "Button 2", "Button 3", "Button 4"};
+    String[] buttons = {"Movies", "Traffic Cameras", "Button 3", "Button 4"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

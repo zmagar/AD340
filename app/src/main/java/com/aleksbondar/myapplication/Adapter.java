@@ -50,11 +50,28 @@ public class Adapter extends BaseAdapter {
         button.setOnClickListener(v -> {
             Button b = (Button) v;
             String s = b.getText().toString();
-            if (s == "Movies") {
-                Intent intent = new Intent(v.getContext(), MoviesActivity.class);
-                v.getContext().startActivity(intent);
+            Intent intent;
+            switch (s) {
+                case "Movies":
+                    intent = new Intent(v.getContext(), MoviesActivity.class);
+                    v.getContext().startActivity(intent);
+                    break;
+                case "Traffic Cameras":
+                    intent = new Intent(v.getContext(), TrafficCamerasActivity.class);
+                    v.getContext().startActivity(intent);
+                    break;
+                default:
+                    Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
             }
-            else Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
+//            if (s == "Movies") {
+//                Intent intent = new Intent(v.getContext(), MoviesActivity.class);
+//                v.getContext().startActivity(intent);
+//            }
+//            if (s == "Traffic Cameras") {
+//                Intent intent = new Intent(v.getContext(), TrafficCamerasActivity.class);
+//                v.getContext().startActivity(intent);
+//            }
+//            else Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
 
 
         });

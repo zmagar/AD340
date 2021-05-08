@@ -7,11 +7,11 @@
     android:gravity="center">
 
     <TextView
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_view"
+        android:layout_marginTop="100dp"
         android:text="@string/buttons"
-        android:textSize="30sp"
-        android:layout_marginTop="10dp"/>
+        android:textSize="30sp" />
 
 </LinearLayout>

@@ -1,13 +1,11 @@
 package com.aleksbondar.myapplication;
 
-import android.app.AppComponentFactory;
+
 import android.os.Bundle;
 import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.List;
 
 public class MoviesActivity extends AppCompatActivity {
     ListView listView;

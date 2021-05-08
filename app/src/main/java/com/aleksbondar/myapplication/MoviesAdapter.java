@@ -27,7 +27,7 @@ private final String[][] zombiemovies;
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.activity_movies_list, parent, false);
 
         ImageView image = view.findViewById(R.id.image);
