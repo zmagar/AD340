@@ -37,7 +37,7 @@ public class CamAdapter extends ArrayAdapter<TrafficCamera> {
         View view = inflater.inflate(R.layout.trafficcamera_list, parent, false);
 
         TextView camId = view.findViewById(R.id.camId);
-        camId.setText(trafficCameras.get(position).camId);
+        camId.setText(context.getString(R.string.camId) + trafficCameras.get(position).camId);
         ImageView image = view.findViewById(R.id.image);
         TextView description = view.findViewById(R.id.description);
         String imageUrl = "https://www.seattle.gov/trafficcams/images/" + trafficCameras.get(position).imageUrl;
