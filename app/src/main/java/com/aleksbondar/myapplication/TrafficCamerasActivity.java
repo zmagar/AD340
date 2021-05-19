@@ -73,14 +73,18 @@ public class TrafficCamerasActivity extends AppCompatActivity {
 
                     JSONObject camData = camArray.getJSONObject(idx);
                     Log.v("camData", camData.toString());
+
+                    JSONArray coord = camData.getJSONArray("PointCoordinate");
+
+                    double[] camCoordinates = {coord.getDouble(0), coord.getDouble(1)};
+
                     JSONArray arr = camData.getJSONArray("Cameras");
-
-
 
 
                             TrafficCamera camera = new TrafficCamera(arr.getJSONObject(0).getString("Id"),
                                     arr.getJSONObject(0).getString("Description"),
-                                    arr.getJSONObject(0).getString("ImageUrl"));
+                                    arr.getJSONObject(0).getString("ImageUrl"),
+                                    camCoordinates);
                             Log.v("Camera ", camera.imageUrl);
                             cameras.add(camera);
                 }

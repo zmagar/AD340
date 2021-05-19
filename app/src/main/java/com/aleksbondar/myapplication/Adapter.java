@@ -60,6 +60,10 @@ public class Adapter extends BaseAdapter {
                     intent = new Intent(v.getContext(), TrafficCamerasActivity.class);
                     v.getContext().startActivity(intent);
                     break;
+                case "Map with Cameras":
+                    intent = new Intent(v.getContext(), MapActivity.class);
+                    v.getContext().startActivity(intent);
+                    break;
                 default:
                     Toast.makeText(context, s, Toast.LENGTH_SHORT ).show();
             }
