@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText enterTextField;
 
-    String[] buttons = {"Movies", "Traffic Cameras", "Button 3", "Button 4"};
+    String[] buttons = {"Movies", "Traffic Cameras", "Map with Cameras", "Button 4"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
