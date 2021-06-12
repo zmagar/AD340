@@ -2,8 +2,11 @@
     <string name="app_name">My Application</string>
     <string name="alex_bondar">Alex Bondar</string>
     <string name="funFact1">I spent ten+ years of my life playing chess, and while I didn\'t achieve any significant success, chess brought me a lot of joy. I met a lot of great chess players, several world champions, from Boris Spassky, Gary Kasparov to Magnus Carlsen.</string>
-    <string name="send">send</string>
+    <string name="send">login</string>
     <string name="enter_text">enter text</string>
     <string name="buttons">buttons</string>
     <string name="camId">\Camera ID: </string>
+    <string name="enter_your_name">name</string>
+    <string name="enter_email">email</string>
+    <string name="enter_your_password">password</string>
 </resources>
