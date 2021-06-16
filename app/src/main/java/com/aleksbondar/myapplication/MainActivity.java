@@ -137,5 +137,10 @@ public class MainActivity extends AppCompatActivity {
         return (!name.isEmpty() && !email.isEmpty() && !pass.isEmpty());
     }
 
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+
 }
 
